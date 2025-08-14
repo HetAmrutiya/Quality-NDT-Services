@@ -1,0 +1,218 @@
+.con {
+  padding: 40px 0;
+  position: relative;
+  background-color: white;
+  margin-bottom: 300px;
+  width: 100vw;
+}
+
+.title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: #f4f4f4;
+  position: relative;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 34px;
+  color: black;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  margin-top: -32px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px 20px;
+  padding: 0 70px;
+  width: 98.9vw;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.service-card {
+  background-color: #f8f8f8;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.service-card:hover {
+  background-color: #cc1616;
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.service-image-container {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.service-image {
+  width: 100%;
+  max-width: 350px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.service-icon-container {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.service-icon-border {
+  width: 80px;
+  height: 80px;
+  background-color: #ffd6d2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #cc1616;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  background-color: white;
+  color: #cc1616;
+}
+
+.service-card:hover .service-icon-border {
+  background-color: #cc1616;
+}
+
+.service-title {
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #333;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+.service-description {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #666;
+  padding: 0 20px;
+  margin-bottom: 80px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-title,
+.service-card:hover .service-description {
+  color: white;
+  transform: translateY(-10px);
+}
+.certifications-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.certification-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    margin-top: -25px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    padding: 0 33px;
+  }
+
+  .service-card {
+    width: 100%;
+  }
+
+  .service-image {
+    height: 200px;
+  }
+
+  .service-title {
+    font-size: 28px;
+    margin: 30px 0 15px;
+  }
+
+  .service-description {
+    font-size: 17px;
+    margin-bottom: 60px;
+    padding: 0 15px;
+  }
+  .certifications-container {
+    gap: 40px;
+  }
+
+  .certification-logo {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-top: -20px;
+  }
+
+  .service-card {
+    padding: 20px 10px;
+  }
+
+  .service-description {
+    font-size: 14px;
+  }
+  .certifications-container {
+    gap: 30px;
+  }
+
+  .certification-logo {
+    width: 70px;
+    height: 70px;
+  }
+}

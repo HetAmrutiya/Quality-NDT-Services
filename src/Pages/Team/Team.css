@@ -1,0 +1,137 @@
+.team-container {
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  margin-bottom: 300px;
+}
+
+.team-title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: #f4f4f4;
+}
+
+.team-subtitle {
+  font-size: 32px;
+  color: black;
+  margin-top: -32px;
+  margin-bottom: 40px;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  padding: 0 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: -280px;
+}
+
+.team-card {
+  background-color: white;
+  padding: 60px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.member-name {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.member-role {
+  color: black;
+  font-size: 15px;
+  margin-top: 3px;
+  margin-bottom: 20px;
+}
+
+.member-description {
+  color: #828481;
+  text-align: center;
+}
+
+.social-icon-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 18px;
+}
+
+.icon {
+  background-color: #828481;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.icon:hover {
+  background-color: #cc1616;
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    padding: 0 30px;
+    gap: 30px;
+  }
+
+  .team-card {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .team-title {
+    font-size: 45px;
+  }
+
+  .team-subtitle {
+    font-size: 26px;
+  }
+
+  .team-image {
+    width: 250px;
+    height: 250px;
+  }
+}

@@ -1,0 +1,304 @@
+.whychoose-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: white !important;
+  position: relative;
+  margin-bottom: 300px;
+}
+
+@keyframes whychoose-fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.whychoose-animate-fadeInUp .whychoose-feature-card {
+  opacity: 1;
+  transform: translateY(0);
+  animation: whychoose-fadeInUp 0.8s ease forwards;
+}
+
+.whychoose-title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: #f4f4f4;
+  position: relative;
+  margin: 0;
+}
+
+.whychoose-subtitle {
+  font-size: 34px;
+  color: black;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  margin-top: -32px;
+}
+
+.whychoose-two-column-list {
+  border-top: 1px solid #cbcccc;
+  width: 86%;
+  text-align: center;
+  margin: 80px auto 0;
+}
+
+.whychoose-item-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px 10px;
+}
+
+.whychoose-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 49%;
+  margin-top: 20px;
+}
+
+.whychoose-icon {
+  color: #e04a4a;
+  font-size: 18px;
+}
+
+.whychoose-item-text {
+  font-size: 18px;
+  color: #444444;
+}
+
+.whatwebring-section {
+  background-image: url("../../assets/bg1.png");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  margin-top: 50px;
+  color: #fff;
+}
+
+.whatwebring-header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.whatwebring-title {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.whatwebring-subtitle {
+  font-size: 19px;
+}
+
+.whatwebring-stats {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  gap: 30px;
+}
+
+.whatwebring-stat-item {
+  text-align: center;
+  max-width: 300px;
+}
+
+.stat-number {
+  font-size: 38px;
+  color: #009961;
+}
+
+.whychoose-feature-grid {
+  display: flex;
+  gap: 20px;
+  padding: 0 70px;
+  margin-top: 80px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.whychoose-feature-card {
+  flex: 1;
+  background-color: white;
+  padding: 60px 40px 40px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: all 0.4s ease;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+  min-width: 280px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation-fill-mode: forwards;
+}
+
+.whychoose-feature-card:hover {
+  background-color: #cc1616;
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(204, 22, 22, 0.4);
+}
+
+.whychoose-feature-id,
+.whychoose-feature-title,
+.whychoose-feature-text {
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.whychoose-feature-card:hover .whychoose-feature-id,
+.whychoose-feature-card:hover .whychoose-feature-title,
+.whychoose-feature-card:hover .whychoose-feature-text {
+  transform: translateY(-20px);
+  color: white;
+}
+
+.whychoose-feature-id {
+  font-size: 35px;
+  margin-bottom: 22px;
+  font-weight: bold;
+  color: #cc1616;
+}
+
+.whychoose-feature-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.whychoose-feature-text {
+  line-height: 1.6;
+  color: #9fa09e;
+  font-size: 17.5px;
+}
+
+.what-we-title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: #f4f4f4;
+  position: relative;
+  margin: 0;
+}
+
+.what-we-subtitle {
+  font-size: 34px;
+  color: black;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  margin-top: -32px;
+}
+
+@keyframes whychoose-fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.whychoose-animate-fadeInUp .whychoose-feature-card {
+  opacity: 1;
+  transform: translateY(0);
+  animation: whychoose-fadeInUp 0.8s ease forwards;
+}
+.whychoose-fadeInUp {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: whychoose-fadeInUp 0.8s ease forwards;
+}
+
+@media (max-width: 1024px) {
+  .whychoose-feature-grid {
+    padding: 0 30px;
+    gap: 20px;
+  }
+
+  .whychoose-feature-card {
+    height: auto;
+  }
+
+  .whychoose-title,
+  .what-we-title {
+    font-size: 48px;
+  }
+
+  .whychoose-subtitle,
+  .what-we-subtitle {
+    font-size: 26px;
+  }
+
+  .whychoose-item {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .whychoose-title,
+  .what-we-title {
+    font-size: 36px;
+  }
+
+  .whychoose-subtitle,
+  .what-we-subtitle {
+    font-size: 22px;
+    margin-top: -20px;
+  }
+
+  .whychoose-feature-grid {
+    padding: 0 20px;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .whychoose-feature-card {
+    padding: 30px 20px;
+    height: auto;
+  }
+
+  .whychoose-feature-id {
+    font-size: 24px;
+  }
+
+  .whychoose-feature-title {
+    font-size: 20px;
+  }
+
+  .whychoose-feature-text {
+    font-size: 16px;
+  }
+
+  .whychoose-item-grid {
+    flex-direction: column;
+  }
+
+  .whychoose-item {
+    width: 100%;
+  }
+
+  .whatwebring-title {
+    font-size: 28px;
+  }
+
+  .whatwebring-subtitle {
+    font-size: 16px;
+  }
+
+  .whatwebring-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-number {
+    font-size: 28px;
+  }
+}

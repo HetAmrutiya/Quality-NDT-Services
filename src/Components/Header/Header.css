@@ -1,0 +1,149 @@
+.header-container {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 180px 80px;
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-out both;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-title {
+  font-size: 35px;
+  font-weight: bold;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.header-subtitle {
+  margin-top: 6px;
+  font-weight: 500;
+  color: #e9e9e9;
+  animation: fadeIn 1.5s ease-in-out 0.2s;
+}
+
+.header-highlight {
+  font-weight: bold;
+  color: #fbf9f9;
+  text-decoration: underline;
+}
+
+.header-cursor {
+  border-right: 2px solid white;
+  margin-left: 2px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header-button {
+  padding: 14px 30px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  margin-top: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header-button:hover {
+  background-color: #cc1616;
+  border: 2px solid #cc1616;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    height: 800px;
+  }
+
+  .header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+  }
+
+  .header-content {
+    text-align: center;
+    padding: 230px 30px;
+  }
+
+  .header-title {
+    margin-top: 50px;
+    font-size: 36px;
+  }
+
+  .header-highlight {
+    font-size: 20px;
+  }
+
+  .header-button {
+    padding: 13px 25px;
+    font-size: 18px;
+  }
+}
