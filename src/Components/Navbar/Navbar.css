@@ -10,10 +10,10 @@
   background-color: #1a1a1a;
   z-index: 1000;
   transition: box-shadow 0.3s ease; /* smooth shadow transition */
-}
-
-.navbar.scrolled {
-  box-shadow: 0 4px 8px rgba(204, 22, 22, 0.3); /* light #cc1616 shadow */
+  }
+  .navbar.scrolled {
+  box-shadow: 0px 4px 8px rgba(204, 22, 22, 0.3); /* Soft red shadow */
+  transition: box-shadow 0.3s ease;
 }
 
 .logo-container {
