@@ -8,8 +8,8 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
-  const [visible, setVisible] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false); // For scroll shadow
   const navigate = useNavigate();
 
   const handleLoginBtn = () => {
@@ -26,6 +26,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      // For active menu highlight
       const sections = ["home", "about", "services", "team", "contact"];
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -37,6 +38,13 @@ const Navbar = () => {
           }
         }
       }
+
+      // For navbar shadow
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -44,7 +52,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar">
+    <div className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="logo-container">
         <img src={logo} alt="Logo" className="logo" />
         <p className="logo-text">QUALITY INDUSTRIAL X-RAY</p>
